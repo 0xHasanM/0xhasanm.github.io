@@ -305,6 +305,9 @@ background: "/img/bg1.png"
    * reading others writeups
    * <u><a href="https://dfir.training" style="color:#000000;">DFIR training</a></u>
    * <u><a href="https://ashemery.com" style="color:#000000;">Ashemery.com</a></u>
+   * <u><a href="https://www.amazon.com/Incident-Response-Computer-Forensics-Third/dp/0071798684" style="color:#000000;">Incident response and digital forensics book</a></u>
+   * <u><a href="https://www.amazon.com/Applied-Incident-Response-Steve-Anson-ebook/dp/B083XF121Z" style="color:#000000;">Applied incident repsonse book</a></u>
+   * <u><a href="https://www.springer.com/gp/book/9783030005801" style="color:#000000;">Introductory computer forensics: a hands on practical approach book</a></u>
 
 * #### Solution Architect path
 
