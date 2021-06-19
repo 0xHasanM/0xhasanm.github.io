@@ -265,6 +265,16 @@ background: "/img/bg1.png"
 8. سيساعد ماجستير إدارة الأعمال المتخصصين في مجال أمن المعلومات على فهم بيئات العمل
 9. سيساعدك LinkedIn في الحصول على وظيفتك الأولى
 
+<u><a href="https://nakerah.net/podcast/21-ali-alwashali-cybersecurity-specialist-digital-forensics-incident-response/" style="color:#000000;">Nakerah Podcast 21, Ali Alwashali</a></u>
+
+1. المهارات التقنية المطلوبة من قبل المحقق الرقمي هي نفسها المطلوبة من قبل المستجيب للحوادث
+2. استخدم Linux باعتباره نظام التشغيل الأساسي لمساعدتك على فهم بعض المفاهيم التي لن تتعلمها أثناء استخدام Windows
+3. إذا كنت تحب شخصًا ما في مجالك ، فحاول أن تفعل ما يفعله.
+4. لا بأس أن تعمل بدون نقود في بداية حياتك المهنية
+5. حاول التدرب على برامج الopen-source بدل من البرامج المدفوعة
+6. حاول حضور معظم الفعاليات والمؤتمرات
+7. حاول تسويق نفسك من خلال نشر اعمالك بدلاً من إرسال سيرتك الذاتية إلى كل مكان
+
 ## التقنيات
 
 1. أساسيات الأنظمة والشبكات أمر لا بد منه للبدء في مجال الCyberSecurity
@@ -295,6 +305,9 @@ background: "/img/bg1.png"
    2. قراءة ابحاث الاخرين
    3. <u><a href="https://dfir.training" style="color:#000000;">تدريب DFIR</a></u>
    4. <u><a href="https://ashemery.com" style="color:#000000;">موقع Ashemery.com</a></u>
+   5. <u><a href="https://www.amazon.com/Incident-Response-Computer-Forensics-Third/dp/0071798684" style="color:#000000;">كتاب Incident response and digital forensics book</a></u>
+   6. <u><a href="https://www.amazon.com/Applied-Incident-Response-Steve-Anson-ebook/dp/B083XF121Z" style="color:#000000;">كتاب Applied incident repsonse book</a></u>
+   7. <u><a href="https://www.springer.com/gp/book/9783030005801" style="color:#000000;">كتاب Introductory computer forensics: a hands on practical approach</a></u>
 
 * #### مهندس الحلول (Solution architect)
 
