@@ -264,6 +264,16 @@ background: "/img/bg1.png"
 8. MBA will help security proffesionals to understand the business enviroments
 9. LinkedIn will help you to get your first job
 
+<u><a href="https://nakerah.net/podcast/21-ali-alwashali-cybersecurity-specialist-digital-forensics-incident-response/" style="color:#000000;">Nakerah Podcast 21, Ali Alwashali</a></u>
+
+1. technical Skills required by a digital forensicator are the same required by an incident responder   
+2. Use Linux as the primary OS to help you understand some concepts you won't learn while using windows   
+3. If you like someone in your field, try to do what he does.   
+4. it is ok to work for no money at the beginning of your career    
+5. try to practice on open-source solutions as an alternative to the commercial solutions   
+6. Try to attend most of the events and conferences   
+7. Try to market yourself by showing off your work instead of sending your CVs everywhere   
+
 ## Technical
 
 1. Basics of systems and networks are a must to start in CyberSecurity Carrer
