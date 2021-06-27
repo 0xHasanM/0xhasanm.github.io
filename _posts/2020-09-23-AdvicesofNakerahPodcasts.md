@@ -274,6 +274,16 @@ background: "/img/bg1.png"
 6. Try to attend most of the events and conferences   
 7. Try to market yourself by showing off your work instead of sending your CVs everywhere   
 
+<u><a href="https://nakerah.net/podcast/22-ghareeb-saadeldin-cybercrim-researcher-ebay-ex-kaspersky-anomali/" style="color:#000000;">Nakerah Podcast 22, Ghareeb Saadeldin</a></u>
+
+1. Malware analysis is considered as a part of Threat Intelligence
+2. goal of Threat Intelligence is to know who developed the malware, who is using and what is there motives
+3. Advanced persistence Threat (APT) is a type of attacker that targets a specific organization for a particular purpose using advanced technologies
+4. To secure something, you have to understand it very well
+5. Self-marketing is an essential skill to build your network and help you land decent jobs
+6. Try to build new skills and knowledge during your University life
+7. Try to be proactive in your work environment
+
 ## Technical
 
 1. Basics of systems and networks are a must to start in CyberSecurity Carrer
