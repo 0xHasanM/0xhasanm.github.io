@@ -284,6 +284,16 @@ background: "/img/bg1.png"
 6. Try to build new skills and knowledge during your University life
 7. Try to be proactive in your work environment
 
+<u><a href="https://nakerah.net/podcast/23-mohamed-abdelrazek-cyber-security-solutions-architect-solutions/" style="color:#000000;">Nakerah Podcast 23, Mohamed Abdelrazek</a></u>
+
+1. Cybersecurity architects should understand the business environment   
+2. CCIE certificate is high quality but not the end of the road   
+3. all security jobs are complementary to each other   
+4. Try to search for a mentor to guide you through your career   
+5. Creating your lab will help you practice and improve your hands-on skills   
+6. Your reputation is your capital   
+7. Understanding IT basics is essential to build a solid security foundation   
+
 ## Technical
 
 1. Basics of systems and networks are a must to start in CyberSecurity Carrer
