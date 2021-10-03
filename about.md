@@ -5,7 +5,7 @@ background: '/img/about.jpg'
 ---
 
 #### whoami
-CyberSecurity researcher, Content Developer @Cyberdefenders, member of Fword CTF teams and creator of [dfircheatsheet](https://dfircheatsheet.github.io)
+CyberSecurity | DFIR researcher, Security Engineer @Cyberdefenders, member of Fword CTF teams and creator of [dfircheatsheet](https://dfircheatsheet.github.io)
 
 #### Certificates
 1. Infosec Skills
