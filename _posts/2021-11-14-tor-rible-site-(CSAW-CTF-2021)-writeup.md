@@ -20,18 +20,17 @@ Author: Stephen Mondiguing, SecurityScorecard
 
 
 #### Walkthrough
-
-We were given an <a href="http://pmh35xhqgkv52vmzkmdqnkmjzv4zjam25asdirnhykz6s76qfac57pid.onion/">.onion</a> website to examine. Check the source code of the website we found an html comment which states that there is a hidden folder in the website.
+We were given an <a href="http://pmh35xhqgkv52vmzkmdqnkmjzv4zjam25asdirnhykz6s76qfac57pid.onion/">.onion</a> website to examine. Check the website's source code, and we found an HTML comment which states that there is a hidden folder on the website.
 <img src="/img/tor-rible-site-sourcecode.png" alt="sourcecode" width="800" height="440">
-Now we need to perform a directory bruteforce on the onion website, for that we need to direct our bruteforce traffic through a tor proxy.
-First we need to install tor proxy using the following command `sudo apt install -y tor`. Running tor proxy the output shows that the proxy is a SOCKS which runs on port 9050.
+Now we need to perform a directory bruteforce on the onion website. For that, we need to direct our bruteforce traffic through a tor proxy.
+First, we need to install tor proxy using the following command `sudo apt install -y tor`. After we run tor proxy, the output shows that the proxy is a SOCKS that runs on port 9050.
 <img src="/img/tor-rible-site-torproxy.png" alt="sourcecode" width="800" height="440">
-After running tor proxy properly we will use gobuster with common.txt wordlist from wfuzz to bruteforce the directories under the onion website.
-Running gobuster `gobuster dir --proxy socks5://127.0.0.1:9050 -u http://pmh35xhqgkv52vmzkmdqnkmjzv4zjam25asdirnhykz6s76qfac57pid.onion/ -w common.txt` gives us two direcotry 'backups' and 'hidden'.
+After running tor proxy properly, we will use gobuster with common.txt wordlist from wfuzz to bruteforce the directories under the onion website.
+Running gobuster `gobuster dir --proxy socks5://127.0.0.1:9050 -u http://pmh35xhqgkv52vmzkmdqnkmjzv4zjam25asdirnhykz6s76qfac57pid.onion/ -w common.txt` gives us two directories, 'backups' and 'hidden'
 <img src="/img/tor-rible-site-gobuster.png" alt="sourcecode" width="800" height="440">
-Browsing backups folder we found two files 'alice.jpg' and 'lookharder.pdf'.
+Browsing the backups folder, we found two files, 'alice.jpg' and 'lookharder.pdf'.
 <img src="/img/tor-rible-site-backups.png" alt="sourcecode" width="800" height="440">
-Checking the strings of the two files we found a flag.txt in the pdf file.
+Checking the strings of the two files, we found a flag.txt in the pdf file.
 <img src="/img/tor-rible-site-pdfstrings.png" alt="sourcecode" width="800" height="440">
-Loading the pdf file in pdfstreamdumper we found the flag in one of the pdf streams.
+Loading the pdf file in pdfstreamdumper, we found the flag in one of the pdf streams.
 <img src="/img/tor-rible-site-flag.png" alt="sourcecode" width="800" height="440">
