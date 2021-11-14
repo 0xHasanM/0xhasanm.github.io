@@ -20,7 +20,7 @@ Author: Stephen Mondiguing, SecurityScorecard
 
 
 #### Walkthrough
-We were given an <a href="http://pmh35xhqgkv52vmzkmdqnkmjzv4zjam25asdirnhykz6s76qfac57pid.onion/">.onion</a> website to examine. Check the website's source code, and we found an HTML comment which states that there is a hidden folder on the website.
+We were given an <a href="http://pmh35xhqgkv52vmzkmdqnkmjzv4zjam25asdirnhykz6s76qfac57pid.onion/" style="color:#0000EE;">.onion</a> website to examine. Check the website's source code, and we found an HTML comment which states that there is a hidden folder on the website.
 <img src="/img/tor-rible-site-sourcecode.png" alt="sourcecode" width="800" height="440">
 Now we need to perform a directory bruteforce on the onion website. For that, we need to direct our bruteforce traffic through a tor proxy.
 First, we need to install tor proxy using the following command `sudo apt install -y tor`. After we run tor proxy, the output shows that the proxy is a SOCKS that runs on port 9050.
