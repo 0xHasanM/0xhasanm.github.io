@@ -16,8 +16,7 @@ Author: Stephen Mondiguing, SecurityScorecard
    1. <a href="https://github.com/OJ/gobuster" style="color:#0000EE;">Gobuster</a>   
    2. <a href="https://itsfoss.com/install-tar-browser-linux/" style="color:#0000EE;">Tor proxy</a>   
    3. <a href="https://github.com/xmendez/wfuzz/blob/master/wordlist/general/common.txt" style="color:#0000EE;">common wordlist</a>   
-   4. <a href="https://github.com/dzzie/pdfstreamdumper" style="color:#0000EE;">pdfstreamdumper</a>
-   5. 
+   4. <a href="https://github.com/dzzie/pdfstreamdumper" style="color:#0000EE;">pdfstreamdumper</a>   
 #### Walkthrough
 
 We were given an <a href="http://pmh35xhqgkv52vmzkmdqnkmjzv4zjam25asdirnhykz6s76qfac57pid.onion/">.onion</a> website to examine. Check the source code of the website we found an html comment which states that there is a hidden folder in the website.
