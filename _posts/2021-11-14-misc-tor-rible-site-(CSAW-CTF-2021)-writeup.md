@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "tor-rible-site (CSAW CTF 2021) writeup "
+title:  "misc-tor-rible-site (CSAW CTF 2021) writeup "
 date:   2021-11-14 00:10:35 +0200
 subtitle: "writeup for tor-rible-site challange in CSAW CTF 2021 finals"
 background: "/img/bg1.png"
