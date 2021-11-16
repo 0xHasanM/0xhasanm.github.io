@@ -20,22 +20,22 @@ Password: cs4w_2021_f1n4lz
 
 
 #### Walkthrough
-We were given a 2GB windows 10 memory dump. I usually start my analysis by loading the dump in Rstudio which scans the file for partitions signature and rebuild the directory structure based on this structure.
-Starting Rstudio, add the image and scan for parititions. (For NTFS partitions Rstudio search for $MFT and rebuild the directory structure based on the $MFT file.)
-After Rstudio finish the scans Righ-Click on the found partition and choose show files.
+We were given a 2GB windows 10 memory dump. I usually start my analysis by loading the dump in Rstudio, which scans the file for partitions signature and rebuilds the directory structure based on this structure.   
+Starting Rstudio, add the image and scan for partitions. (For NTFS partitions, Rstudio search for $MFT and rebuild the directory structure based on the $MFT file.)   
+After Rstudio finishes the scans, Righ-Click on the found partition and choose show files.   
 <img src="/img/foren-weekend-crash/foren-weekend-crash-rstudio-analysis.png" alt="sourcecode" width="800" height="440">
-The download folders show that a firefox installer was downloaded, checking the program files we found that only firefox is the installed program so that is our target.
+The download folders show that the user downloaded a firefox installer. Checking the program files, we found that only firefox is the installed program, so that is our target.   
 <img src="/img/foren-weekend-crash/foren-weekend-crash-downloads.png" alt="sourcecode" width="800" height="440">
-Now let's move our analysis to Volatility3. Based on the information we were able to extract, we need to dump firefox profiles.
-First we need to list the files present in the memory dump using the following command `vol3 -f weekend_crash.bin windows.filescan > output.txt`. Looking for firefox files we found many files.
+Now let's move our analysis to Volatility3. Based on the information we were able to extract, we need to dump firefox profiles.   
+First, we need to list the files present in the memory dump using the following command `vol3 -f weekend_crash.bin windows.filescan > output.txt`. Looking for firefox files, we found many files.   
 <img src="/img/foren-weekend-crash/foren-weekend-crash-filescan.png" alt="sourcecode" width="800" height="440">
-Let's check firefox history first which is stored in places.sqlite. Use `vol3 -f weekend_crash.bin windows.dumpfiles --virtaddr 0x940cdc0252d0` command to dump the places.sqlite file and use DB Browser for SQLite to analyse the content of places.sqlite
+Let's check firefox history first, which is stored in places.sqlite. Use `vol3 -f weekend_crash.bin windows.dumpfiles --virtaddr 0x940cdc0252d0` command to dump the places.sqlite file and use DB Browser for SQLite to analyze the content of places.sqlite.   
 <img src="/img/foren-weekend-crash/foren-weekend-crash-places.sqlite.png" alt="sourcecode" width="800" height="440">
-Examining the history we found `http://congon4tor.com:7777/` website which returns `No flag sorry`.
+Examining the history, we found the `http://congon4tor.com:7777/` website, which returns `No flag sorry`.   
 <img src="/img/foren-weekend-crash/foren-weekend-crash-noflag.png" alt="sourcecode" width="800" height="440">
-May be there is a cookie we need t inject so let's dump cookies.sqlite and examine it with DB browser for SQLite.
+Maybe there is a cookie we need to inject, so let's dump cookies.sqlite and examine it with DB Browser for SQLite.   
 <img src="/img/foren-weekend-crash/foren-weekend-crash-cookies.png" alt="sourcecode" width="800" height="440">
-As we thought we found a cookie with name `magic` and value `6670ee0a08c2818f76256954c72ad077, injecting them to the website we got the flag but encoded with rot13.
+As we thought, we found a cookie with the name `magic` and value `6670ee0a08c2818f76256954c72ad077. Injecting cookies to the website, we got the flag, but it is encoded with rot13.   
 <img src="/img/foren-weekend-crash/foren-weekend-crash-cookiessql.png" alt="sourcecode" width="800" height="440">
-Using cyberchef we were able to decode it.
+Using cyberchef, we were able to decode it.   
 <img src="/img/foren-weekend-crash/foren-weekend-crash-flag.png" alt="sourcecode" width="800" height="440">
