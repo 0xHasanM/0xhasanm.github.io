@@ -72,11 +72,11 @@ USBDeview: Load the system hive from Options menu => Advanced Options
    Answer: 04016cd7fe9bdb2e12fdc62886a111831a8be58c0143f781b2179f053e968   
    <img src="/img/foren-no-time-to-register-9-13.png" alt="sourcecode" width="800" height="440">
 10.**Timestamp of first connection of USB to the machine. (Use format HH:MM:SS MM/DD/YYYY)**   
-   Answer: First install time = 10/30/2021 10:36:59 PM   
+   Answer: First install time = 10/30/2021 10:36:59 PM      
 11.**Timestamp of last connection of USB to the machine. (Use format HH:MM:SS MM/DD/YYYY)**   
-   Answer: Connect time = 11/1/2021 9:49:01 AM   
+   Answer: Connect time = 11/1/2021 9:49:01 AM      
 12.**Timestamp of last write to USB attached to the machine. (Use format HH:MM:SS MM/DD/YYYY)**   
-   Answer: Disconnect time = 11/1/2021 9:49:13 AM   
+   Answer: Disconnect time = 11/1/2021 9:49:13 AM      
    <img src="/img/foren-no-time-to-register-usbdeview-sandisk.png" alt="sourcecode" width="800" height="440">
 13.**GUID of USB attached to the machine**   
    Answer: d53e38d0-36db-11ec-ae51-080027ec0de9   
