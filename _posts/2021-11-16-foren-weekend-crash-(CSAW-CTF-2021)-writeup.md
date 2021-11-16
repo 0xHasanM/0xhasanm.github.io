@@ -16,8 +16,7 @@ Password: cs4w_2021_f1n4lz
    1. <a href="https://www.rstudio.com/" style="color:#0000EE;">Rstudio</a>   
    2. <a href="https://github.com/volatilityfoundation/volatility3" style="color:#0000EE;">Volatility3</a>   
    3. <a href="https://sqlitebrowser.org/" style="color:#0000EE;">DB browser for SQLite</a>   
-   4. <a href="https://github.com/simsong/bulk_extractor" style="color:#0000EE;">bulk-extractor</a>
-   5. <a href="https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)" style="color:#0000EE;">CyberChef</a>
+   4. <a href="https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)" style="color:#0000EE;">CyberChef</a>
 
 
 #### Walkthrough
