@@ -14,7 +14,7 @@ Slack Parser is a script to parse slack database and extract user-data, chat his
 * [Usage](#Usage)  
   
 ## Installation  
-1. ```https://github.com/0xMohammed/Slack-Parser.git```  
+1. ```https://github.com/0xHasanM/Slack-Parser.git```  
 2. ```cd Slack-Parser```    
 3. ```python3 Slack-Parser.py```  
   
