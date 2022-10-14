@@ -11,7 +11,7 @@ Snowcracker used to crack Stegsnow passwords tool can preform decompression on e
 
 #### Install
 1. `pip install future`
-2. `git clone https://github.com/0xMohammed/SnowCracker.git && cd SnowCracker`
+2. `git clone https://github.com/0xHasanM/SnowCracker.git && cd SnowCracker`
 
 #### Usage
 
