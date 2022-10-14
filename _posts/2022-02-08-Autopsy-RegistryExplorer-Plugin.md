@@ -21,7 +21,7 @@ Autopsy Module to analyze Registry Hives based on bookmarks provided by <a href=
 4. Transaction logs analysis and determine wether the Registry Hive is dirty or not.
 
 ## Screenshot
-<img src="https://raw.githubusercontent.com/0xMohammed/Autopsy-Registry-Explorer/main/screenshot.png" alt="Hash-Extension-Bruter Usage" width="800" height="440">
+<img src="https://raw.githubusercontent.com/0xHasanM/Autopsy-Registry-Explorer/main/screenshot.png" alt="Hash-Extension-Bruter Usage" width="800" height="440">
 
 ## Installation  
 1. ```git clone https://github.com/0xMohammed/Autopsy-Registry-Explorer.git```  
