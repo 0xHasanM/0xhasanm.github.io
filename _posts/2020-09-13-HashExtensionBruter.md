@@ -20,7 +20,7 @@ Hash-Extender-Bruter is a tool in python to bruteforce Hash-extender length and 
 2. send the new generated signatures to website and exclude results that contains words in resfilter option  
   
 #### Installation  
-1. ```git clone https://github.com/0xMohammed/Hash-Extender-Bruter.git```  
+1. ```git clone https://github.com/0xHasanM/Hash-Extender-Bruter.git```  
 2. ```cd Hash-Extender-Bruter```  
 3. ```mv ./hash-extender /usr/bin```  
 4. ```pip3 install -r requirements.txt```  
