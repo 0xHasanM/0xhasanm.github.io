@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MokhbirPro – Privacy Policy</title>
+  <style>
+    :root { --bg: #0f1117; --card: #1a1d27; --text: #e0e0e0; --muted: #9e9e9e; --accent: #2196f3; --border: #2a2d3a; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; padding: 2rem 1rem; }
+    .container { max-width: 720px; margin: 0 auto; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; color: #fff; }
+    .subtitle { color: var(--muted); margin-bottom: 2rem; font-size: 0.9rem; }
+    h2 { font-size: 1.15rem; color: var(--accent); margin: 1.75rem 0 0.5rem; }
+    p, li { font-size: 0.95rem; color: var(--text); }
+    ul { padding-left: 1.25rem; margin: 0.5rem 0; }
+    li { margin-bottom: 0.35rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+    .footer { color: var(--muted); font-size: 0.8rem; text-align: center; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">MokhbirPro – TradingView to Circle &nbsp;|&nbsp; Last updated: February 24, 2026</p>
+
+    <h2>1. Overview</h2>
+    <p>MokhbirPro is a Chrome extension that captures chart screenshots from TradingView and sends them to Circle.so chat rooms. This policy explains what data the extension accesses, how it is used, and how it is protected.</p>
+
+    <h2>2. Data We Access</h2>
+    <p>The extension accesses the following data <strong>only when you explicitly interact with it</strong>:</p>
+    <ul>
+      <li><strong>Active tab URL &amp; page content</strong> – The current tab's URL and DOM elements are read to detect the ticker symbol when you are on a TradingView chart page.</li>
+      <li><strong>Visible tab screenshot</strong> – A screenshot of the currently visible tab is captured when you click the capture button.</li>
+      <li><strong>Circle.so session cookies</strong> – Your existing Circle.so authentication cookies are read to authenticate API requests to your Circle.so community.</li>
+      <li><strong>Comment text</strong> – When you post a comment on a Circle.so discussion page and the comment hook feature is enabled, the extension reads the comment text so you can optionally broadcast it to additional chat channels.</li>
+      <li><strong>User-entered settings</strong> – Community URL, community ID, chat room ID, participant ID, watermark preferences, and comment hook URL patterns that you configure in the Options page.</li>
+    </ul>
+
+    <h2>3. How Data Is Used</h2>
+    <ul>
+      <li>Screenshots and ticker symbols are sent <strong>only to your configured Circle.so community</strong> via the Circle.so API.</li>
+      <li>Screenshots are uploaded to Circle.so's cloud storage (e.g., AWS S3) as part of the standard Circle.so message attachment flow.</li>
+      <li>Comment text is forwarded only to Circle.so chat channels that <strong>you have selected</strong>.</li>
+      <li>Session cookies are used solely to authenticate requests to Circle.so on your behalf.</li>
+      <li>Settings are stored in <code>chrome.storage.sync</code> to persist across your Chrome sessions and devices.</li>
+    </ul>
+
+    <h2>4. Data We Do NOT Collect</h2>
+    <ul>
+      <li>We do <strong>not</strong> collect, store, or transmit any data to the extension developer or any third party.</li>
+      <li>We do <strong>not</strong> track browsing history, keystrokes, or mouse activity.</li>
+      <li>We do <strong>not</strong> collect personally identifiable information (name, email, address).</li>
+      <li>We do <strong>not</strong> collect financial, health, or location data.</li>
+      <li>We do <strong>not</strong> use analytics, telemetry, or any tracking services.</li>
+      <li>We do <strong>not</strong> store passwords — authentication relies entirely on your existing browser session cookies.</li>
+    </ul>
+
+    <h2>5. Data Storage &amp; Retention</h2>
+    <p>All data processing happens locally in your browser. The only persisted data is your configuration settings stored in <code>chrome.storage.sync</code>. Screenshots and messages exist only in memory during the send operation and are not cached or logged by the extension. Uninstalling the extension removes all stored settings.</p>
+
+    <h2>6. Third-Party Services</h2>
+    <p>The extension communicates exclusively with:</p>
+    <ul>
+      <li><strong>Circle.so</strong> (<code>*.circle.so</code>) – to post messages and upload images to your community.</li>
+      <li><strong>Cloud storage</strong> (e.g., AWS S3, Google Cloud Storage) – upload endpoints provided by Circle.so for image attachments.</li>
+    </ul>
+    <p>No data is sent to any other service. The extension has no analytics, advertising, or tracking integrations.</p>
+
+    <h2>7. Remote Code</h2>
+    <p>The extension does not load or execute any remote code. All JavaScript is bundled within the extension package. The Content Security Policy is set to <code>script-src 'self'</code>, preventing remote script execution.</p>
+
+    <h2>8. Permissions Explained</h2>
+    <ul>
+      <li><strong>activeTab</strong> – Capture a screenshot of the current tab when you click capture.</li>
+      <li><strong>tabs</strong> – Query the current tab's URL and communicate with content scripts.</li>
+      <li><strong>scripting</strong> – Inject a script to find the chart element's bounds before screenshotting.</li>
+      <li><strong>cookies</strong> – Read Circle.so session cookies for API authentication.</li>
+      <li><strong>storage</strong> – Save your extension settings across sessions.</li>
+      <li><strong>host_permissions (&lt;all_urls&gt;)</strong> – Run content scripts on TradingView and Circle.so pages.</li>
+    </ul>
+
+    <h2>9. User Control</h2>
+    <p>You have full control over the extension's behavior:</p>
+    <ul>
+      <li>The comment hook feature can be disabled in Settings.</li>
+      <li>The floating capture button can be hidden in Settings.</li>
+      <li>All settings can be changed or cleared at any time.</li>
+      <li>Uninstalling the extension removes all stored data.</li>
+    </ul>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>If this policy is updated, the changes will be reflected on this page with an updated date. Continued use of the extension after changes constitutes acceptance of the revised policy.</p>
+
+    <hr class="divider">
+
+    <h2>11. Contact</h2>
+    <p>If you have questions about this privacy policy, contact us at: <a href="mailto:mokhbirpro@gmail.com">mokhbirpro@gmail.com</a></p>
+
+    <div class="footer">
+      &copy; 2026 MokhbirPro. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
