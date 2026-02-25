@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Embed Wrapper</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!--
+    USAGE:
+    Pass the target URL as a query parameter: ?url=https://example.com
+    Example: https://0xhasanm.github.io/embed.html?url=https://yourwebsite.com
+
+    If no ?url is provided, it defaults to the TARGET_URL constant below.
+  -->
+
+  <iframe id="embedFrame" src="" allowfullscreen
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+  </iframe>
+
+  <script>
+    // ── DEFAULT fallback URL (edit this) ──────────────────────────────────────
+    const TARGET_URL = "https://0xhasanm.github.io/";
+    // ─────────────────────────────────────────────────────────────────────────
+
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const url = params.get("url") || TARGET_URL;
+
+      // Basic validation: must start with http:// or https://
+      if (/^https?:\/\//.test(url)) {
+        document.getElementById("embedFrame").src = url;
+      } else {
+        document.body.innerHTML =
+          '<p style="color:red;font-family:sans-serif;padding:20px;">Invalid URL. Please provide a valid ?url=https://... parameter.</p>';
+      }
+    })();
+  </script>
+
+</body>
+</html>
